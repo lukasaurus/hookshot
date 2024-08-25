@@ -1,0 +1,301 @@
+[gd_scene load_steps=11 format=4 uid="uid://8nnhaiuf5taq"]
+
+[ext_resource type="PackedScene" uid="uid://ca2mjl3kgpx36" path="res://player.tscn" id="1_gpvmk"]
+[ext_resource type="Texture2D" uid="uid://b1etgd0ybmxp4" path="res://sky.png" id="1_qfokq"]
+[ext_resource type="Texture2D" uid="uid://djgx60mo6uv1k" path="res://tileset.png" id="3_c25p7"]
+[ext_resource type="Texture2D" uid="uid://cllc6xge6vj3a" path="res://hook.png" id="4_47ihl"]
+[ext_resource type="Texture2D" uid="uid://dux7yqd7pb0vr" path="res://rope.png" id="4_hfffe"]
+[ext_resource type="Texture2D" uid="uid://bbhmhgaa3g7o" path="res://clouds.png" id="5_swp1y"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bolhf"]
+friction = 0.0
+bounce = 0.17
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ceco4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4lu0"]
+texture = ExtResource("3_c25p7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -16, 16, -16, 16, 16, 8, 16)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 8, -8, -16, -16, -16)
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+24:1/0 = 0
+26:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -16, 16, -16, 16, -8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, -16, -8, 16, 8, 16, -16)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 8, 16, -8, 16, -16, -16, -16)
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+26:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+21:3/0 = 0
+22:3/0 = 0
+24:3/0 = 0
+25:3/0 = 0
+26:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+24:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+26:5/0 = 0
+27:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+21:6/0 = 0
+22:6/0 = 0
+23:6/0 = 0
+24:6/0 = 0
+25:6/0 = 0
+26:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+23:7/0 = 0
+24:7/0 = 0
+25:7/0 = 0
+26:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+21:8/0 = 0
+23:8/0 = 0
+24:8/0 = 0
+25:8/0 = 0
+26:8/0 = 0
+0:9/0 = 0
+6:9/0 = 0
+23:9/0 = 0
+24:9/0 = 0
+25:9/0 = 0
+26:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dxqkr"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/3 = SubResource("TileSetAtlasSource_k4lu0")
+
+[node name="World" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 556.0
+offset_bottom = 304.0
+scale = Vector2(2.16, 2.16)
+texture = ExtResource("1_qfokq")
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 327)
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+position = Vector2(117, 37)
+node_a = NodePath("../Player")
+disable_collision = false
+softness = 16.0
+motor_target_velocity = 1.39626
+
+[node name="Player" parent="." node_paths=PackedStringArray("hook", "pinjoint") instance=ExtResource("1_gpvmk")]
+position = Vector2(360, 198)
+physics_material_override = SubResource("PhysicsMaterial_bolhf")
+lock_rotation = false
+contact_monitor = true
+max_contacts_reported = 2
+hook = NodePath("../HookPoint")
+pinjoint = NodePath("../PinJoint2D")
+metadata/_edit_group_ = true
+
+[node name="Line2D" type="Line2D" parent="Player"]
+texture_repeat = 2
+position = Vector2(0.175957, 0.301231)
+scale = Vector2(1.0176, 1.03012)
+points = PackedVector2Array(0, 0, 130.527, 20.0935)
+width = 5.71
+texture = ExtResource("4_hfffe")
+texture_mode = 1
+
+[node name="HookPoint" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HookPoint"]
+shape = SubResource("CircleShape2D_ceco4")
+
+[node name="Sprite2D" type="Sprite2D" parent="HookPoint"]
+position = Vector2(-11, 1)
+rotation = 1.5708
+texture = ExtResource("4_47ihl")
+
+[node name="Marker2D" type="Marker2D" parent="HookPoint"]
+position = Vector2(-21, 0)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." groups=["Hookable"]]
+tile_map_data = PackedByteArray("AAAFAAAAAwABAAAAAAAFAAEAAwABAAEAAAAFAAIAAwABAAIAAAAGAAAAAwACAAAAAAAGAAEAAwACAAEAAAAGAAIAAwACAAIAAAAHAAAAAwADAAAAAAAHAAEAAwADAAEAAAAHAAIAAwADAAIAAAAIAAAAAwAEAAAAAAAIAAEAAwAEAAEAAAAKAAEAAwABAAAAAAAKAAIAAwABAAEAAAAKAAMAAwABAAIAAAALAAEAAwACAAAAAAALAAIAAwACAAEAAAALAAMAAwACAAIAAAAMAAEAAwADAAAAAAAMAAIAAwADAAEAAAAMAAMAAwADAAIAAAANAAEAAwAEAAAAAAANAAIAAwAEAAEAAAAPAAIAAwABAAAAAAAPAAMAAwABAAEAAAAPAAQAAwABAAIAAAAQAAIAAwACAAAAAAAQAAMAAwACAAEAAAAQAAQAAwACAAIAAAARAAIAAwADAAAAAAARAAMAAwADAAEAAAARAAQAAwADAAIAAAASAAIAAwAEAAAAAAASAAMAAwAEAAEAAAAUAAMAAwABAAAAAAAUAAQAAwABAAEAAAAUAAUAAwABAAIAAAAVAAMAAwACAAAAAAAVAAQAAwACAAEAAAAVAAUAAwACAAIAAAAWAAMAAwADAAAAAAAWAAQAAwADAAEAAAAWAAUAAwADAAIAAAAXAAMAAwAEAAAAAAAXAAQAAwAEAAEAAAABAAYAAwABAAAAAAABAAcAAwABAAEAAAABAAgAAwABAAIAAAACAAYAAwACAAAAAAACAAcAAwACAAEAAAACAAgAAwACAAIAAAADAAYAAwADAAAAAAADAAcAAwADAAEAAAADAAgAAwADAAIAAAAEAAYAAwAEAAAAAAAEAAcAAwAEAAEAAAAGAAYAAwABAAAAAAAGAAcAAwABAAEAAAAGAAgAAwABAAIAAAAHAAYAAwACAAAAAAAHAAcAAwACAAEAAAAHAAgAAwACAAIAAAAIAAYAAwADAAAAAAAIAAcAAwADAAEAAAAIAAgAAwADAAIAAAAJAAYAAwAEAAAAAAAJAAcAAwAEAAEAAAA=")
+tile_set = SubResource("TileSet_dxqkr")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -14.0
+offset_top = 433.0
+offset_right = 1271.0
+offset_bottom = 669.0
+texture = ExtResource("5_swp1y")
+stretch_mode = 1
